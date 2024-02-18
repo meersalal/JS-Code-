@@ -18,3 +18,38 @@ let anotherId = Symbol("999")
 
 console.log(Id === anotherId ) // false beacuse two different unique variable
 
+
+/***************************************************************/
+
+// Stack and Heap Memory 
+
+// Primitive (Stack memory)                                        Non Primirtive (Heap memory)
+// Stirng, Number, Boolean, BigInt, Symbol, Null, Undefine            Array, Object, Function 
+
+
+ /******** Stack Memory **********/
+
+ let Email = "meer@gmail.com"
+ 
+ let anotherEmail = Email
+
+ console.log(anotherEmail);
+ 
+ anotherEmail = "Salal@gmail.com"
+
+ console.log(Email);
+ console.log(anotherEmail);
+
+ /************* Heap Memory *************/
+
+ let user1 = {
+    name : "Meer",
+    age: 25
+ }
+
+ let user2 = user1
+
+ user2.name = "Salal"
+
+ console.log(user1);
+ console.log(user2);
